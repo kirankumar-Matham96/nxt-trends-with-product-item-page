@@ -50,7 +50,6 @@ class ProductItemDetails extends Component {
     const {params} = match
     const {id} = params
     const url = `https://apis.ccbp.in/products/${id}`
-    // const url = `https://apis.ccbp.in/products/product-details/${id}`
     const options = {
       method: 'GET',
       headers: {
@@ -140,12 +139,10 @@ class ProductItemDetails extends Component {
       availability,
       brand,
       description,
-      //   id,
       imageUrl,
       price,
       rating,
       similarProducts,
-      //   style,
       title,
       totalReviews,
     } = updatedProductDetails
@@ -155,7 +152,7 @@ class ProductItemDetails extends Component {
         <div className="product-details-main-container">
           <img
             src={imageUrl}
-            alt={title}
+            alt="product"
             className="product-item-details-img"
           />
           <div className="product-details-data-container">
@@ -237,7 +234,7 @@ class ProductItemDetails extends Component {
     <div className="failed-view-container">
       <img
         src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-error-view-img.png"
-        alt="error view"
+        alt="failure view"
         className="failed-view-img"
       />
       <h1 className="filed-view-title">Product Not Found</h1>

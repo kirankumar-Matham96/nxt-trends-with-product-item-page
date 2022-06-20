@@ -279,6 +279,7 @@
 
 .filed-view-title {
   color: #12022f;
+  margin: 20px 0;
 }
 @media (min-width: 768px) {
   .filed-view-title {
